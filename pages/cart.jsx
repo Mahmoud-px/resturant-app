@@ -25,7 +25,7 @@ const Cart = () => {
   const createOrder = async (data) => {
     console.log("Creating order with data:", data);
     try {
-      const res = await axios.post("http://localhost:3000/api/orders", data);
+      const res = await axios.post("https://pizza-clone-git-main-mahmoud-px.vercel.app//api/orders", data);
       console.log("Order created:", res.data);
       if (res.status === 201) {
         router.push(`/orders/${res.data._id}`);

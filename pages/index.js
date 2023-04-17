@@ -44,7 +44,7 @@ export const getServerSideProps = async (ctx) => {
   }
 
   try{
-    const res = await axios.get("http://localhost:3000/api/products");
+    const res = await axios.get("https://pizza-clone-git-main-mahmoud-px.vercel.app//api/products");
 
     return {
       props: {
